@@ -11,3 +11,6 @@ class SimpleCalc:
 
     def divide(self, value1, value2):
         return value1/value2
+
+    def percentage(self, value1, value2):
+        return (value1/value2)*100

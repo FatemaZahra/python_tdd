@@ -17,4 +17,9 @@ class Caltests(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(self.calc_obj.divide(2, 2), 1)
 
+    def test_percentage(self):
+        self.assertEqual(self.calc_obj.percentage(2, 2), 100)
+
+
+
 
