@@ -15,3 +15,6 @@ This process is referred to as the red-green-refactor cycle
 - Write the minimum amount of code that will make that test pass (green)
 - Refactor code if necessary
 - Repeat.
+
+### Benefits
+Research studies demonstrate that TDD is a technique that has the most impact in the quality of the code developers write.
