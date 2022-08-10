@@ -17,4 +17,6 @@ This process is referred to as the red-green-refactor cycle
 - Repeat.
 
 ### Benefits
-Research studies demonstrate that TDD is a technique that has the most impact in the quality of the code developers write.
+- Research studies demonstrate that TDD is a technique that has the most impact in the quality of the code developers write.
+- Code has fewer bugs
+
