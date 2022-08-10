@@ -20,6 +20,11 @@ class Caltests(unittest.TestCase):
     def test_percentage(self):
         self.assertEqual(self.calc_obj.percentage(2, 2), 100)
 
+    def test_convert_cm_to_m(self):
+        self.assertEqual(self.calc_obj.convert_cm_to_m(1), 0.01)
+
+    def test_dob(self):
+        self.assertEqual(self.calc_obj.dob(1), 2021)
 
 
 
