@@ -20,3 +20,48 @@ This process is referred to as the red-green-refactor cycle
 - Research studies demonstrate that TDD is a technique that has the most impact in the quality of the code developers write.
 - Code has fewer bugs
 
+## Example code 
+### Test
+```python
+from calc import SimpleCalc
+import unittest
+import pytest
+
+class Caltests(unittest.TestCase):
+    calc_obj = SimpleCalc()
+
+    def test_add(self):
+        self.assertEqual(self.calc_obj.add(2, 4), 6)
+
+    def test_subtract(self):
+        self.assertEqual(self.calc_obj.subtract(4, 2), 2)
+
+    def test_multiply(self):
+        self.assertEqual(self.calc_obj.multiply(4, 2), 8)
+
+    def test_divide(self):
+        self.assertEqual(self.calc_obj.divide(2, 2), 1)
+
+    def test_percentage(self):
+        self.assertEqual(self.calc_obj.percentage(2, 2), 100)
+
+```
+### Code
+```python
+class SimpleCalc:
+
+    def add(self, value1, value2):
+        return value1 + value2
+
+    def subtract(self, value1, value2):
+        return value1 - value2
+
+    def multiply(self, value1, value2):
+        return value1 * value2
+
+    def divide(self, value1, value2):
+        return value1/value2
+
+    def percentage(self, value1, value2):
+        return (value1/value2)*100
+```
