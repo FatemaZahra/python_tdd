@@ -1,5 +1,7 @@
 # python_tdd
 
+## Test-Driven-Development
+
 When writing good quality code we need to make sure our functions are fully tested. The process we will use to achieve this is called test-driven-development.
 
 ![image](https://user-images.githubusercontent.com/102330725/183909708-1e6b7af4-af3d-4616-97d4-da8b5181cfa6.png)
@@ -7,7 +9,7 @@ When writing good quality code we need to make sure our functions are fully test
 
 First we need to decide on what behaviour we would like to test. We will start with the simplest behaviour first. Once that is working we can add another piece of functionality and test that independently. This allows us to build up to an eventual solution so that we don't have to solve the whole problem at once.
 
-## Red - green - refactor cycle
+### Red - green - refactor cycle
 This process is referred to as the red-green-refactor cycle
 
 - We first decide what functionality we want to implement.
@@ -16,12 +18,12 @@ This process is referred to as the red-green-refactor cycle
 - Refactor code if necessary
 - Repeat.
 
-### Benefits
+#### Benefits
 - Research studies demonstrate that TDD is a technique that has the most impact in the quality of the code developers write.
 - Code has fewer bugs
 
-## Example code 
-### Test
+### Example code 
+#### Test
 ```python
 from calc import SimpleCalc
 import unittest
@@ -51,7 +53,7 @@ class Caltests(unittest.TestCase):
     def test_dob(self):
         self.assertEqual(self.calc_obj.dob(1), 2021)
 ```
-### Code
+#### Code
 ```python
 class SimpleCalc:
 
