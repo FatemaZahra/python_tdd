@@ -19,8 +19,12 @@ This process is referred to as the red-green-refactor cycle
 - Repeat.
 
 #### Benefits
+
+- Helps to develop the logic in our code
 - Research studies demonstrate that TDD is a technique that has the most impact in the quality of the code developers write.
 - Code has fewer bugs
+- Easy to add functionality to your code
+- Code can be understood easily
 
 ### Example code 
 #### Test
